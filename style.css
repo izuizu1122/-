@@ -1,0 +1,80 @@
+/* 基本設定 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #4a4238; /* 柔らかい茶色 */
+    line-height: 1.6;
+    background-color: #fdfaf5; /* 温かみのある白 */
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #4a4238;
+    font-weight: 500;
+}
+
+/* メインビジュアル */
+.hero {
+    height: 400px;
+    background-color: #dcd0c0; /* 画像がない場合の仮の色 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* コンテンツエリア */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dcd0c0;
+    display: inline-block;
+}
+
+/* フッター */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #4a4238;
+    color: #fff;
+}
