@@ -2,11 +2,11 @@
 body {
     margin: 0;
     padding: 0;
-    /* フォントをより親しみやすい丸みのあるものに変更 */
-    font-family: "Yu Gothic", "游ゴシック", "Meiryo", sans-serif;
-    color: #333; 
-    line-height: 1.6;
-    background-color: #fff9ed; /* より明るいクリーム色に */
+    /* セリフ体（明朝体）に変更してクラシックな印象に */
+    font-family: "Sawarabi Mincho", "Yu Mincho", "游明朝", serif;
+    color: #4e342e; /* 深いコーヒーブラウン */
+    line-height: 1.8;
+    background-color: #fdf5e6; /* 温かみのあるオールドペーパー風 */
 }
 
 /* ヘッダー */
@@ -14,86 +14,86 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
-    background-color: #ff9f43; /* ポップなオレンジに！ */
-    border-bottom: 4px solid #ee5253; /* 下線にアクセント */
+    padding: 20px 50px;
+    background-color: #3e2723; /* 濃いローストブラウン */
+    border-bottom: 2px double #d4af37; /* 金色の二重線で高級感を */
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 900;
-    color: #fff;
-    text-shadow: 2px 2px 0px #ee5253; /* ロゴに立体感 */
-    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #d4af37; /* アンティークゴールド */
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .nav a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    background: #ee5253;
-    padding: 8px 15px;
-    border-radius: 20px; /* ボタン風に丸く */
-    transition: 0.3s;
+    color: #d4af37;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border: 1px solid #d4af37; /* 枠線のみでスッキリ */
+    transition: 0.4s;
 }
 
 .nav a:hover {
-    background: #fff;
-    color: #ee5253;
+    background: #d4af37;
+    color: #3e2723;
 }
 
 /* メインビジュアル */
 .hero {
-    height: 350px;
-    background-color: #feca57; /* 元気なイエロー */
+    height: 400px;
+    /* セピア調の背景色や、ノイズ感のあるデザインをイメージ */
+    background-color: #8d6e63; 
+    background-image: radial-gradient(#a1887f 1px, transparent 1px);
+    background-size: 20px 20px; /* 微かなドット模様 */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom: 10px dotted #fff; /* 水玉模様のような境界線 */
 }
 
 .hero-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #fff;
-    text-shadow: 3px 3px 0px #ff9f43;
+    letter-spacing: 5px;
+    /* かすれたような影 */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 /* コンテンツエリア */
 .about {
-    padding: 60px 20px;
+    padding: 60px 40px;
     text-align: center;
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 700px;
+    margin: -40px auto 60px; /* メインビジュアルに少し被せる */
     background: #fff;
-    border-radius: 30px; /* 角を丸くして柔らかく */
-    box-shadow: 0 10px 0px #dcd0c0; /* ポップな厚みのある影 */
+    border: 1px solid #d7ccc8;
+    box-shadow: 10px 10px 0px rgba(78, 52, 46, 0.1); /* 控えめな影 */
 }
 
 .about h3 {
-    font-size: 2rem;
-    color: #ff9f43;
-    margin-bottom: 20px;
-    position: relative;
-    border-bottom: none;
+    font-size: 1.8rem;
+    color: #4e342e;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 
-/* 見出しの下に可愛い線を引く */
+/* 装飾的な区切り線 */
 .about h3::after {
-    content: "";
+    content: "☕"; /* ワンポイントのアイコン */
     display: block;
-    width: 50px;
-    height: 5px;
-    background: #ee5253;
-    margin: 10px auto;
-    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 /* フッター */
 .footer {
     text-align: center;
-    padding: 20px;
-    background-color: #ee5253;
-    color: #fff;
-    font-weight: bold;
+    padding: 30px;
+    background-color: #3e2723;
+    color: #d7ccc8;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
